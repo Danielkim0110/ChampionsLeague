@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Premier League</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Mini Premier League</h1>
+
+<section id="transfer-section">
+    <h2>Transfers</h2>
+    <label>Manager:
+        <select id="manager-select"></select>
+    </label>
+    <label>Add Player:
+        <select id="add-player"></select>
+    </label>
+    <label>Drop Player:
+        <select id="drop-player"></select>
+    </label>
+    <button id="transfer-btn">Transfer</button>
+    <p id="transfer-msg"></p>
+</section>
+
+<section id="points-section">
+    <h2>Gameweek Points</h2>
+    <label>GW Number: <input type="number" id="gw-number" min="1" max="38" value="1"></label>
+    <button id="update-gw-btn">Update GW Points</button>
+</section>
+
+<section id="team-section">
+    <h2>Teams</h2>
+    <div id="teams-display"></div>
+</section>
+
+<section id="admin-section">
+    <h2>Admin: Add Player</h2>
+    <input type="text" id="new-player-name" placeholder="Player Name">
+    <button id="add-player-btn">Add to Pool</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
